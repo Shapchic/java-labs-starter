@@ -17,11 +17,6 @@ public class PriceCalculator {
         return this.discountPolicy.apply(price);
     }
 
-    //Алиас для {@link #calculatePrice(double)}.
-    public double calculate(double price) {
-        return calculatePrice(price);
-    }
-
     //Заменяет текущую политику скидок на новую.
     public void changeDiscountPolicy(DiscountPolicy discountPolicy) {
         if (discountPolicy == null) {
